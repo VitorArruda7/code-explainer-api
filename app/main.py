@@ -7,5 +7,4 @@ app = FastAPI(
     version="0.1.0"
 )
 
-# Include all routes from code_routes
 app.include_router(code_routes.router)

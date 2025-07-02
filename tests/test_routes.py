@@ -6,7 +6,6 @@ from app.routes import code_routes
 
 client = TestClient(app)
 
-# Substitui a dependência pelo mock
 app.dependency_overrides[code_routes.get_openai_service] = MockOpenAIService
 
 def test_explain_code_mock():
