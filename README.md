@@ -1,6 +1,6 @@
 # 📝 Code Explainer API
 
-Uma API simples para explicar trechos de código usando um modelo mockado (com estrutura preparada para integração com OpenAI). Desenvolvida com **FastAPI**, seguindo práticas de Clean Architecture, testes automatizados com **pytest**, e pronta para deploy com **Docker**.
+Uma API para explicar trechos de código usando um modelo mockado (com estrutura preparada para integração com OpenAI). Desenvolvida com **FastAPI**, seguindo práticas de Clean Architecture, testes automatizados com **pytest**, e pronta para deploy com **Docker**.
 
 ---
 
@@ -28,26 +28,28 @@ Uma API simples para explicar trechos de código usando um modelo mockado (com e
 
 ## 📁 **Estrutura de diretórios**
 
+```bash
 code-explainer-api/
 ├── app/
-│ ├── init.py
-│ ├── main.py
-│ ├── models/
-│ │ └── code_models.py
-│ ├── routes/
-│ │ └── code_routes.py
-│ └── services/
-│ ├── init.py
-│ └── code_service.py
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models/
+│   │   └── code_models.py
+│   ├── routes/
+│   │   └── code_routes.py
+│   └── services/
+│       ├── __init__.py
+│       └── code_service.py
 ├── tests/
-│ ├── init.py
-│ ├── test_code_service.py
-│ └── test_routes.py
+│   ├── __init__.py
+│   ├── test_code_service.py
+│   └── test_routes.py
 ├── .env.example
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
